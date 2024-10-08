@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>kalkulator temperature
+    </title>
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <h2>Mini Project Revou Software Engineering</h2>
+    </nav>
+  </header>
+  <div class="panel">
+ 
+    <div class="box">
     
-</body>
+        <h2 id="operationTitle">Konversi Celcius ke Fahrenheit</h2>
+        <hr />
+    
+    
+      
+    <p id="operation"> Masukan suhu derajat Celcius(°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapakan hasil konversi dalam bentuk Fahrenheit(°F)</>
+    </div>
+    <div class="box">
+      <selection>
+        <form>
+            <label id="labelinput" for="input">Celcius(°C):</label><br>
+           <textarea name="input" id="input"></textarea>
+          </form>
+          <button type="button" style="cursor:pointer"  onclick="konversi()">Konversi</button>  
+          <button type="button" style="cursor:pointer"  onclick="reset()">Reset</button>  
+          <button type="button" style="cursor:pointer"  onclick="reverse()">Reverse</button>  
+          <div> 
+            <label id="labeloutpu1" for="output1">Fahrenheit(°F):</label><br>
+           <textarea name="output1" id="output1"></textarea>
+          </div>
+          <div> 
+            <label for="output2">Cara Kalkulasi:</label><br>
+           <textarea name="output2" id="output2"></textarea>
+          </div>
+          <span class="reverseButton" style="cursor:pointer" id="Reverse" onclick="reverse()">Fahrenheit(°F) ke Celcius(°C) </span>
+          
+    </selection>
+    </div>
+    <article class="box" id="process">
+        <header >
+            <h2>Cara konversi Celcius ke Fahrenheit</h2>
+            <hr />
+          </header>
+        <p >
+          Suhu <span class="suhu-style">S</span> dalam derajat Fahrenheit
+          (°F) sama dengan suhu <span class="suhu-style">S</span> dalam
+          derajat Celcius (°C) kali 9/5 tambah 32.
+        </p>
+      <div class="rumus"> 
+          <span class="suhu-style">S</span><sub>(°F)</sub> = (<span class="suhu-style">S</span><sub
+            >(°C)</sub> x 9/5) + 32
+          </div>
+        <p>atau</p>
+        <div class="rumus"> 
+        <span class="suhu-style">S</span><sub>(°F)</sub> = (<span class="suhu-style">S</span><sub
+          >(°C)</sub>x 1.8) + 32
+        </div>
+      </article>
+
+    <script src="js/script.js"></script>
+  </div>
+  </body>
 </html>
